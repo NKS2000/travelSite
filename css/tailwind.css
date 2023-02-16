@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+    .backgroundCenter{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover
+    }
+    .h-86 {
+        height: 22rem;
+      }
+@tailwind utilities;
+
+    .card{
+        @apply w-48 h-64 rounded-lg shadow-lg flex-none transform transition-all
+    }
+    .card:hover{
+        @apply -translate-y-4 shadow-2xl
+    }
+    .btn{
+        @apply w-32 py-3 text-lg shadow-sm font-semibold bg-gray-50 rounded-full text-primary;
+    }
+    .btn:hover{
+        @apply bg-primary text-white scale-110
+    }
+    .cardDescrip{
+        @apply w-full h-2/5 rounded-b-lg px-3 pt-3 text-white;
+    }
+    .trendingTitle{
+        @apply text-xl text-gray-100 pl-8 pt-8 pb-2 font-semibold;
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+    .scrollbar-hide {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
